@@ -147,10 +147,9 @@
 </body>
 <script>
   let content = window.location.search.split('=')[1];
-  console.log(content);
   let ipt = document.getElementById('input');
   if (content) {
-    ipt.value = content;
+    ipt.value = decodeURIComponent(content);
   }
 </script>
 
